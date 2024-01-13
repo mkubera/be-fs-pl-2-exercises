@@ -1,6 +1,4 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
 import { AppTitle } from "./components/AppTitle";
 
@@ -15,16 +13,10 @@ function App() {
   const reset = () => setCount(() => INIT_COUNT);
 
   // PRESENTATION TIER
-  const randomNumber = Math.random()
+  const randomNumber = Math.random();
   return (
     <>
       <AppTitle title={"Counter App"} number={randomNumber} />
-      <AppTitle title={"Counter App"} number={randomNumber} />
-      <AppTitle title={"Counter App"} />
-      <AppTitle title={"Different App"} />
-      <AppTitle title={"Different App"} />
-      <AppTitle title={"Different App"} />
-      <AppTitle title={"Different App"} />
 
       <div className="card">
         <button onClick={increment}>count is {count}</button>
